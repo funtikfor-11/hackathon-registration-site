@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Blue Whale Hackathon</title>
+</head>
+<body>
+
+    <h1 class="title">BLUE WHALE HACKATHON</h1>
+    <div class="hero">
+        <p>Добро пожаловать на хакатон. Создавай, кодируй, побеждай!</p>
+    
+
+ <!-- Описание и Организаторы -->
+<div class="content-section">
+    <section id="about">
+        <h2>О проекте</h2>
+        <p>Blue Whale Hackathon — это площадка для молодых разработчиков, где ты можешь создать MVP, проверить свои силы и побороться за крутые призы в атмосфере настоящего челленджа.</p>
+    </section>
+
+    <section id="jury-and-authors">
+        <div class="team-grid">
+            <div>
+                <h2>Авторы проекта</h2>
+                <p>Наше Имя / Команда организаторов</p>
+            </div>
+            <div>
+                <h2>Наше Жюри</h2>
+                <p>Ведущие эксперты в IT и преподаватели</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <div class="timer-container">
+        <div class="timer-item"><div id="days">00</div><div class="timer-label">Days</div></div>
+        <div class="timer-item"><div id="hours">00</div><div class="timer-label">Hours</div></div>
+        <div class="timer-item"><div id="minutes">00</div><div class="timer-label">Minutes</div></div>
+        <div class="timer-item"><div id="seconds">00</div><div class="timer-label">Seconds</div></div>
+    </div>
+
+   
+    <!-- Блок контактов -->
+    <div id="contacts-section" class="footer-contacts">
+        <h2>Контакты</h2>
+        <p>Telegram: @blue_whale_hack</p>
+        <p>Email: info@bluewhale.kz</p>
+        <p>WhatsApp: +7 777 000 00 00</p>
+    </div>
+
+<!-- Навигация -->
+<nav class="navbar">
+    <button onclick="toggleTheme()" class="nav-btn">Тема</button> 
+    <a href="#" class="nav-btn">Меню</a>
+    <a href="#contacts-section" class="nav-btn">Контакты</a>
+    <a href="https://forms.gle/gVge1S3zoAirUXuZ8" class="nav-btn">Регистрация</a>
+</nav>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
